@@ -1,0 +1,252 @@
+@import "compass";
+
+$font1: 'Nunito Sans', sans-serif;
+$font2: 'Open Sans', sans-serif;
+
+body
+{
+	background: #fff;
+}
+
+#container
+{
+	background: #fff;	
+}
+
+.homepage
+{
+	padding: 40px 40px;
+
+	.google
+	{
+		h3
+		{
+			font-family: $font1;
+			margin: 0px;
+			margin-bottom: 15px;
+		}
+
+		.google-btn
+		{
+			background: #d34836;
+			border-color: #d34836;
+			font-family: $font1;
+			border-radius: 0px;
+			padding: 6px 25px;
+			@include transition(all 0.5s);
+			&:hover
+			{
+				background: #d34866;
+				border-color: #d34866;
+			}
+		}
+
+		p
+		{
+			font-family: $font1;
+			margin-top: 15px;
+		}
+	}
+
+	.or-section
+	{
+		margin-top: 5px;
+		margin-bottom: 15px;
+		font-family: $font1;
+		span
+		{
+			display: inline-block;
+			vertical-align: middle;
+			&.pipe
+			{
+				border-bottom: 1px solid #ccc;
+				width: 20%;
+				&.left-pipe
+				{
+					margin-right: 10px;
+				}
+
+				&.right-pipe
+				{
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+
+	.form
+	{
+		.form-control
+		{
+			width: 220px;
+			margin:auto;
+			font-family: $font2;
+			text-align: center;
+			border-radius: 0px;
+		}
+
+		.terms
+		{
+			font-family: $font2;
+			display: block;
+			padding: 10px 20px 0px;
+			font-size: 13px;
+			& > a 
+			{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.agrement
+{
+	padding: 20px 40px;
+	.document
+	{
+		img 
+		{
+			box-shadow: 0px 0px 5px #444;
+			border-radius: 4px;
+		}
+		margin-bottom: 15px;
+	}
+}
+
+.main-btn
+{
+	font-family: $font1;
+	border-radius: 0px;
+	outline: 0px;
+	padding: 6px 25px;
+	@include transition(all 0.5s);
+	&.disable
+	{
+		background: #bbb;
+		border-color: #bbb;
+		cursor: default;
+	}
+}
+
+.modal
+{
+	font-family: $font2;
+	.modal-content
+	{
+		border-radius: 0px;
+
+		.modal-title
+		{
+			font-family: $font1;
+		}
+
+		.media-left
+		{
+			vertical-align: top;
+		}
+		.media-object
+		{
+			width: 90px;			
+		}
+
+		.media-body
+		{
+			padding-left: 20px;
+		}
+
+
+		.verify
+		{
+			button,input
+			{
+				display: inline-block;	
+				vertical-align: middle;			
+			}
+
+			.form-control
+			{
+				width: 70%;
+			    border-radius: 0px;
+			    box-shadow: none;
+			}
+		}
+	}
+}
+
+.flash-message
+{
+	position: fixed;
+	top: 0px;
+	display: none;
+	width: 100%;
+	background: #fff;
+	text-align: center;
+	padding: 10px 10px;
+	font-family: $font2;
+	box-shadow: 0px 0px 2px #aaa;
+	h3 
+	{
+		font-family: $font1;
+		margin: 0px;
+		font-size: 17px;
+		margin-bottom: 5px;
+	}
+
+	a 
+	{
+		text-decoration: none;
+		font-family: $font2;
+	}
+
+	.message
+	{
+		background: #d0cdb2;
+		border: 1px solid #c3bd6e;
+		padding: 7px;
+		width: 300px;
+		color: #fff;
+		margin: auto;
+		margin-top: 10px;
+
+		i 
+		{
+			display: inline-block;
+			margin-right: 10px;
+			width: 26px;
+			height: 26px;
+			border-radius: 50%;
+			border: 1px solid #fff;
+			line-height: 25px;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) { 
+	.main-btn
+	{
+		padding: 6px 15px;
+	}
+
+	.modal
+	{
+		.modal-dialog
+		{
+			margin: 0px;
+		}
+		
+		.modal-content
+		{
+			border-color: #fff;
+			.media-object
+			{
+				width: 50px;			
+			}
+
+			.media-body
+			{
+				padding-left: 0px;
+			}
+		}
+	}
+}

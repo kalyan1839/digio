@@ -1,0 +1,58 @@
+<div class="col-md-8 col-md-offset-2 text-center agrement">
+	<div class="row document">
+		<img src="images/page.png" class="img-responsive">
+	</div>
+	<div class="row">
+		<button class="btn btn-primary main-btn" data-toggle="modal" data-target="#aadharModal">Request OTP to Signin</button>
+	</div>
+</div>
+
+<div class="modal fade" id="aadharModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close hidden-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Register Aadhaar</h4>
+      </div>
+      <div class="modal-body">
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" src="images/aadhar.png" alt="...">
+            </a>
+          </div>
+          <div class="media-body">
+            <div class="col-md-12">
+            	<div class="row verify" ng-show="!aadhar_otp || otp_verified">
+            		<input type="text" name="aadhar" ng-model="aadhar_number" class="form-control aadhar_number" minlength="12" maxlength="12" placeholder="Aadhaar Number">
+            		<button class="btn btn-primary main-btn" ng-class="{'disable': aadhar_number.length!=12}" ng-click="aadhar_number.length==12?aadharOtp():''" ng-hide="otp_verified">Verify</button>
+            	</div>
+            	<div class="row verify" ng-show="aadhar_otp && !otp_verified">
+            		<input type="text" name="aadhar" class="form-control" placeholder="OTP" minlength="6" maxlength="6" ng-model="otp_view">
+            		<button class="btn btn-primary main-btn" ng-class="{'disable': otp_view.length!=6}" ng-click="otp_view.length==6?verifyOtp():''">Verify</button>
+            	</div>
+            	<div class="row">
+            		<div class="checkbox">
+            		    <label>
+            		      <input type="checkbox" ng-model="agree" name="agree" ng-true-value="true" ng-false-value="false"> I agree to eSign the <a href="#">KYC document</a> to get started
+            		    </label>
+            		</div>
+            	</div>
+            	<div class="row text-right">
+            		<button class="btn btn-primary main-btn" ng-class="{'disable': !aadhar_number || !otp_verified || !agree}" ng-click="(aadhar_number && otp_verified && agree)?success():''">Submit</button>
+            	</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flash-message">
+	<h3>Signing...</h3>
+	<a href="#">Mutual Non-Disclosure Agreement</a>
+	<div class="message">
+		<i class="fa fa-check"></i><span>Aadhar verified successfully</span>
+	</div>
+</div>

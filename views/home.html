@@ -1,0 +1,26 @@
+<div class="col-md-6 col-md-offset-3 text-center homepage">
+	<div class="row google">
+		<h3>Gmail Account? Proceed with</h3>
+		<button class="btn btn-primary google-btn" ng-click="goProceed()">G+ Google</button>
+		<p>
+			<b>Tip:</b> If you using multiple Gmail accounts, select the account shown above
+		</p>
+	</div>
+	<div class="row or-section">
+		<span class="left-pipe pipe"></span>
+		<span><b>OR</b></span>
+		<span class="right-pipe pipe"></span>
+	</div>
+	<div class="row form">
+		<form novalidate name="regForm" ng-submit="regIt(regForm.$valid)">
+			<div class="form-group">
+				<input type="email" name="email" class="form-control" placeholder="Your Email" ng-model="email" required>
+				<span class="help-block" ng-show="regForm.email.$touched && regForm.email.$invalid">Enter valid email.</span>
+				<span class="terms">By continuing, I confirm to the <a href="#">Terms of Serive</a> and <a href="#">Privacy Policy</a> of <a href="#">digio.in</a></span>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary main-btn" ng-disabled="!regForm.$valid">Continue</button>
+			</div>
+		</form>
+	</div>
+</div>

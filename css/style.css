@@ -1,0 +1,223 @@
+/* line 6, ../sass/style.scss */
+body {
+  background: #fff;
+}
+
+/* line 11, ../sass/style.scss */
+#container {
+  background: #fff;
+}
+
+/* line 16, ../sass/style.scss */
+.homepage {
+  padding: 40px 40px;
+}
+/* line 22, ../sass/style.scss */
+.homepage .google h3 {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+/* line 29, ../sass/style.scss */
+.homepage .google .google-btn {
+  background: #d34836;
+  border-color: #d34836;
+  font-family: "Nunito Sans", sans-serif;
+  border-radius: 0px;
+  padding: 6px 25px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 37, ../sass/style.scss */
+.homepage .google .google-btn:hover {
+  background: #d34866;
+  border-color: #d34866;
+}
+/* line 44, ../sass/style.scss */
+.homepage .google p {
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 15px;
+}
+/* line 51, ../sass/style.scss */
+.homepage .or-section {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: "Nunito Sans", sans-serif;
+}
+/* line 56, ../sass/style.scss */
+.homepage .or-section span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 60, ../sass/style.scss */
+.homepage .or-section span.pipe {
+  border-bottom: 1px solid #ccc;
+  width: 20%;
+}
+/* line 64, ../sass/style.scss */
+.homepage .or-section span.pipe.left-pipe {
+  margin-right: 10px;
+}
+/* line 69, ../sass/style.scss */
+.homepage .or-section span.pipe.right-pipe {
+  margin-left: 10px;
+}
+/* line 79, ../sass/style.scss */
+.homepage .form .form-control {
+  width: 220px;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  border-radius: 0px;
+}
+/* line 88, ../sass/style.scss */
+.homepage .form .terms {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  padding: 10px 20px 0px;
+  font-size: 13px;
+}
+/* line 94, ../sass/style.scss */
+.homepage .form .terms > a {
+  text-decoration: none;
+}
+
+/* line 102, ../sass/style.scss */
+.agrement {
+  padding: 20px 40px;
+}
+/* line 105, ../sass/style.scss */
+.agrement .document {
+  margin-bottom: 15px;
+}
+/* line 107, ../sass/style.scss */
+.agrement .document img {
+  box-shadow: 0px 0px 5px #444;
+  border-radius: 4px;
+}
+
+/* line 116, ../sass/style.scss */
+.main-btn {
+  font-family: "Nunito Sans", sans-serif;
+  border-radius: 0px;
+  outline: 0px;
+  padding: 6px 25px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 123, ../sass/style.scss */
+.main-btn.disable {
+  background: #bbb;
+  border-color: #bbb;
+  cursor: default;
+}
+
+/* line 131, ../sass/style.scss */
+.modal {
+  font-family: "Open Sans", sans-serif;
+}
+/* line 134, ../sass/style.scss */
+.modal .modal-content {
+  border-radius: 0px;
+}
+/* line 138, ../sass/style.scss */
+.modal .modal-content .modal-title {
+  font-family: "Nunito Sans", sans-serif;
+}
+/* line 143, ../sass/style.scss */
+.modal .modal-content .media-left {
+  vertical-align: top;
+}
+/* line 147, ../sass/style.scss */
+.modal .modal-content .media-object {
+  width: 90px;
+}
+/* line 152, ../sass/style.scss */
+.modal .modal-content .media-body {
+  padding-left: 20px;
+}
+/* line 160, ../sass/style.scss */
+.modal .modal-content .verify button, .modal .modal-content .verify input {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 166, ../sass/style.scss */
+.modal .modal-content .verify .form-control {
+  width: 70%;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+/* line 176, ../sass/style.scss */
+.flash-message {
+  position: fixed;
+  top: 0px;
+  display: none;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0px 0px 2px #aaa;
+}
+/* line 187, ../sass/style.scss */
+.flash-message h3 {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0px;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+/* line 195, ../sass/style.scss */
+.flash-message a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+/* line 201, ../sass/style.scss */
+.flash-message .message {
+  background: #d0cdb2;
+  border: 1px solid #c3bd6e;
+  padding: 7px;
+  width: 300px;
+  color: #fff;
+  margin: auto;
+  margin-top: 10px;
+}
+/* line 211, ../sass/style.scss */
+.flash-message .message i {
+  display: inline-block;
+  margin-right: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  line-height: 25px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 226, ../sass/style.scss */
+  .main-btn {
+    padding: 6px 15px;
+  }
+
+  /* line 233, ../sass/style.scss */
+  .modal .modal-dialog {
+    margin: 0px;
+  }
+  /* line 238, ../sass/style.scss */
+  .modal .modal-content {
+    border-color: #fff;
+  }
+  /* line 241, ../sass/style.scss */
+  .modal .modal-content .media-object {
+    width: 50px;
+  }
+  /* line 246, ../sass/style.scss */
+  .modal .modal-content .media-body {
+    padding-left: 0px;
+  }
+}
